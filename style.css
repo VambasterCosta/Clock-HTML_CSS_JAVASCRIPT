@@ -10,18 +10,55 @@
   box-sizing:  border-box;  
 }
 
+.colors{
+ justify-content: space-evenly;
+ display: flex;
+ align-items: center;
+ height: 100px;
+}
+
+.button{
+    width: 2em;
+    height: 2em;
+    border:none;
+    border-radius: 50%;
+    border: 0.1em  solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.color-blue-root{
+  
+    background:var(--cor-bord-clock) ;
+}
+.color-blue{
+    background:#194350 ;
+}
+.color-rosa-plus{
+    background:#ff8882 ;
+}
+.color-blue-rosa-minus{
+    background:#ffc2b4 ;
+}
+.color-cinza{
+    background:#9dbeb9 ;
+}
+
 body{
+    background:#091921;
+}
+
+.body{
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      min-height:80vh;
       min-width: 100vw;
-      background:#091921;
+   
 }
 
 .clock{
-    width: 25em;
-    height: 25em;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -32,7 +69,7 @@ body{
     box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
                 inset 0 -15px 15px rgba(255, 255, 255, 0.05),
                 0 15px 15px rgba(0, 0, 0, 0.03),
-                inset 0 -15px 15px rgba(0, 0, 0, 0.03);
+                inset 0 -15px 15px rgba(0, 0, 0, 0.04);
 }
 
 .clock::before{
@@ -65,9 +102,8 @@ body{
 .hr, .mn, .sc{
     display:flex;
     justify-content: center;
-   /* align-items: center;*/
-   position: absolute;
-   border-radius: 50%;
+    position: absolute;
+    border-radius: 50%;
 }
 
 
